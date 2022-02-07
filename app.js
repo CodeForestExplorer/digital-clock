@@ -1,10 +1,11 @@
 // ID Data
-let hoursData = document.querySelector("#hours");
-let minutesData = document.querySelector("#minutes");
-let secondsData = document.querySelector("#seconds");
-let monthsData = document.querySelector("#months");
-let dayData = document.querySelector("#day");
-let dateData = document.querySelector("#date");
+const hoursData = document.querySelector("#hours");
+const minutesData = document.querySelector("#minutes");
+const secondsData = document.querySelector("#seconds");
+const monthsData = document.querySelector("#months");
+const dayData = document.querySelector("#day");
+const dateData = document.querySelector("#date");
+
 
 // Monthname Array
 const monthName = [
@@ -35,12 +36,14 @@ const weekDay = [
 
 function time() {
   const date = new Date();
-  hoursData.textcontent = date.getHours();
-  minutesData.textcontent = date.getMinutes();
-  secondsData.textcontent = date.getSeconds();
-  monthsData.textcontent = monthName[date.getMonth()];
-  dayData.textcontent = weekDay[date.getDay()];
-  dateData.textcontent = date.getDate();
+  hoursData.textContent = date.getHours();
+  minutesData.textContent = date.getMinutes();
+  secondsData.textContent = date.getSeconds();
+  monthsData.textContent = monthName[date.getMonth()];
+  dayData.textContent = weekDay[date.getDay()];
+  dateData.textContent = date.getDate();
 
 }
 setInterval(time, 1000)
+
+console.log(typeof monthsData);
