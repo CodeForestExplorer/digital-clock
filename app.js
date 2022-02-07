@@ -6,7 +6,6 @@ const monthsData = document.querySelector("#months");
 const dayData = document.querySelector("#day");
 const dateData = document.querySelector("#date");
 
-
 // Monthname Array
 const monthName = [
   "January",
@@ -42,8 +41,7 @@ function time() {
   monthsData.textContent = monthName[date.getMonth()];
   dayData.textContent = weekDay[date.getDay()];
   dateData.textContent = date.getDate();
-
 }
-setInterval(time, 1000)
+setInterval(time, 1000);
 
 console.log(typeof monthsData);
