@@ -44,4 +44,4 @@ function time() {
 }
 setInterval(time, 1000);
 
-console.log(weekDay);
+// console.log(weekDay);
