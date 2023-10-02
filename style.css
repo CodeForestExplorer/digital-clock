@@ -28,15 +28,20 @@ html, body {
   padding: 1rem;
   font-size: 3rem;
   font-weight: 900;
+  border: 1rem rgb(147, 186, 190) dotted;
 }
 .time-main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  text-indent: 5px;
+  letter-spacing: .5rem
 }
 
 .date-main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  text-indent: 50px;
+  letter-spacing: .5rem
 }
